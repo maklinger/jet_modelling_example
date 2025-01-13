@@ -169,3 +169,14 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+*.DS_Store
+
+CMakeCache.txt
+CMakeLists.txt
+cmake_install.cmake
+Makefile
+
+CMakeFiles
+pybhjet-main
