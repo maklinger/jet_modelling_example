@@ -14,7 +14,7 @@ The idea of this is to provide you with a simple coding exercise that involves m
 
 The goal is to use the BHJet model to reproduce the data of the prototype X-ray binary GX 339-4. The data consists of a spectral energy distribution in the file `Data/gx339-4_mw.csv`. The BHJet model is described in detail in [this paper](http://arxiv.org/abs/2108.12011), and involves many free parameters. Familiarise yourself with the general setup of the model and focus on the most important parameters in Table 2 (You can ignore the additional absorption/reflection components which are not part of BHJet and handled via the parameters `rel_refl, line_norm, line_E, line_sigma, nH`). Play around with them and try to reproduce these different scenarios, and understand their physical differences.
 
-The BHJet model is implemented in `C++`. It can either be used directly in `C++` or in `python` using `pybind11` in the pyBHJet code. It needs to be compiled to a library first, as discussed below.
+The BHJet model is implemented in `C++`. It can either be used directly in `C++` or in `python` using `pybind11` in the pyBHJet code. It needs to be compiled to a library first, as discussed below. Then it can be included and used as in the exemplary Jupyter notebook `example_notebook.ipynb`.
 
 
 ## Installation advice
