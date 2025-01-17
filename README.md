@@ -34,6 +34,7 @@ In order to use the environment, it must be activated:
 Next, the C++ code has to be compiled. Go into the root directory of the repository and run:
 
 `cmake .`
+
 Note: This may produce some warnings, but these can generally be ignored. 
 
 This will create a `Makefile`, which can be executed to perform the compilation:
