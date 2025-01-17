@@ -10,7 +10,7 @@ This is the github repository containing the little coding exercise for the appl
 
 ## Background information and exercise for applicants
 
-The idea of this is to provide you with a simple coding exercise that involves modeling with the grops BHJet code and prepares you for the PhD position. Please have a look at this before the interview days.
+The idea of this is to provide you with a simple coding exercise that involves modeling with the group's BHJet code and prepares you for the PhD position. Please have a look at this before the interview days.
 
 The goal is to use the BHJet model to reproduce the data of the prototype X-ray binary GX 339-4. The data consists of a spectral energy distribution in the file `Data/gx339-4_mw.csv`. The BHJet model is described in detail in [this paper](http://arxiv.org/abs/2108.12011), and involves many free parameters. Familiarise yourself with the general setup of the model and focus on the most important parameters in Table 2 (You can ignore the additional absorption/reflection components which are not part of BHJet and handled via the parameters `rel_refl, line_norm, line_E, line_sigma, nH`). Play around with them and try to reproduce these different scenarios, and understand their physical differences.
 
@@ -23,7 +23,7 @@ The simplest way to get the code running is via a conda environment. If you don'
 
 The next step is to create a new environment for this project and install all the packages:
 
-`micromamba create -n jetexample python numpy matpotlib jupyterlab pybind11 gcc make cmake gsl -c conda-forge`
+`micromamba create -n jetexample python numpy matplotlib jupyterlab pybind11 gcc make cmake gsl -c conda-forge`
 
 Since part of the code is written in C++ and needs to be compiled using `cmake` and `make`, it is important to have a compiler installed. Depending on your operating system you can exchange the `gcc` flag with a different compiler (e.g., `gxx` or `clang`).
 
